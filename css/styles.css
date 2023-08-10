@@ -11,6 +11,8 @@
   --btn-accent-txt-cl: #ffffff;
   --hero-txt-cl: #ffffff;
   --footer-txt-cl: #ffffff;
+  /* boarder colors */
+  --header-border: #ececec;
   /* background colors */
   --hero-bg-cl: #2f303a;
   --footer-bg-cl: #2f303a;
@@ -210,6 +212,25 @@ address {
 /* footer */
 footer {
   background-color: var(--footer-bg-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 28px;
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.78px;
+  text-decoration: none;
+
+  color: var(--footer-logo-cl);
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .footer-address-link {
@@ -243,17 +264,6 @@ footer {
   letter-spacing: 0.42px;
 
   color: var(--accent-txt-cl);
-}
-
-.footer-logo {
-  font-family: var(--secondary-font);
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.78px;
-  text-decoration: none;
-
-  color: var(--footer-logo-cl);
 }
 
 .footer-address-link:hover,
